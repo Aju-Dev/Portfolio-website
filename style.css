@@ -205,14 +205,6 @@ span{
     letter-spacing: 1px;
 
 }
-.contact-sec a{
-    color: whitesmoke;
-    text-align: justify;
-    font-size: 17px;
-    font-family: century gothic;
-    letter-spacing: 1px;
-
-}
 .about-sec h3{
     margin-top: 4%;
     margin-left: 5%;
@@ -376,6 +368,13 @@ span{
     letter-spacing: 1px;
     margin-top: 1%;
 }
+.contact-sec a{
+    color: beige;
+    font-family: century gothic;
+    letter-spacing: 1px;
+    margin-top: 1%;
+}
+
 .contact-box{
     margin-top: 26%;
     margin-bottom: 10%;
