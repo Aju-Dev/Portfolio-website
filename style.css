@@ -1,0 +1,457 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.558),rgba(0, 0, 0, 0.695)), url('particles-7104407_1280.jpg');
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.navbar-light .navbar-toggler{
+    border: 1px solid #FFFFFF80;
+}
+.navbar-light .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.nav-sec{
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(8px);
+}
+.navbar-brand{
+    color: #ff7300!important;
+    letter-spacing: 1px;
+    font-size:25px;
+    font-family: cursive;
+    font-weight: bold;
+}
+#act{
+    color: white!important;
+}
+#act:hover{
+    color: #ff7300!important;
+}
+#act{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+#act::before{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height:2.5px;
+    bottom: 5px;
+    background-color:white;
+    transition: .2s;
+}
+#act:hover::before{
+    width: 65px;
+}
+
+.nav-link{
+    font-size: 16px;
+    font-family: century gothic;
+    transition: .6s;
+    letter-spacing: 1.1px;
+    color: white!important;
+    margin-left: 35PX 
+}
+.nav-link:hover{
+    color: #ff7200!important;
+}
+.nav-link{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.nav-link::before{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height:2.5px;
+    bottom: 5px;
+    background-color: #fff;
+    transition: .2s;
+}
+.nav-link:hover::before{
+    width: 65px;
+}
+.home-sec h3{
+    color: white;
+    margin-top: 30%;
+    letter-spacing: 1px;
+    font-family: century gothic;
+}
+span{
+    color: rgba(0, 250, 250, 0.93);
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.home-sec #name{
+    color: #ff7300;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 38px;
+}
+.home-sec p{
+    color: whitesmoke;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-family: century gothic;
+}
+.icons a{
+    color:#ff7300;
+    font-size: 18px;
+    margin-left: 23px;
+    transition: .4s;
+}
+.icons a:hover{
+    color:rgba(0, 250, 250, 0.93);
+}
+.but{
+    background: transparent;
+    text-decoration: none;
+    color: white;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.215);
+    box-shadow: inset 0 0 0 rgba(255, 255, 255, 0.875);
+    padding: 5px 15px;
+    letter-spacing: 1px;
+    transition: .6s ease;
+    animation-name: btnled;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+@keyframes btnled{
+    0% {border:2px solid rgb(0, 255, 119); }
+    10%{border:2px solid orange;}
+    15%{border:2px solid greenyellow;}
+    20%{border:2px solid blueviolet;}
+    25%{border:2px solid cadetblue;}
+    30%{border:2px solid chocolate;}
+    35%{border:2px solid aqua;}
+    40%{border:2px solid rgb(0, 60, 255);}
+    45%{border:2px solid chartreuse;}
+    50%{border:2px solid brown;}
+    55%{border:2px solid rgb(183, 0, 255);}
+    60%{border:2px solid crimson;}
+    65%{border:2px solid cornflowerblue;}
+    70%{border:2px solid hotpink;}
+    75%{border:2px solid rgb(4, 255, 0);}
+    80%{border:2px solid cyan;}
+    85%{border:2px solid #5F0F40;}
+    90%{border:2px solid #701e2d;}
+    95%{border:2px solid #49108B;}
+    100%{border:2px solid #FF9800;}
+
+}
+.but:hover{
+    color: black;
+    box-shadow: inset 180px 0 0 rgba(255, 255, 255, 0.875);
+
+}
+.home-sec img{
+    margin-top: 15%;
+    border-radius: 50%;
+    width: 350px;
+    height: 400px;
+    animation: float 3s ease-out infinite;
+}
+@keyframes float {
+    50%{
+        transform: translateY(12px);
+    }
+}
+.about-sec{
+    margin-top: 10%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.712),rgba(0, 0, 0, 0.811)), url('html-system-website-concept.jpg');
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+.about-sec h1{
+    letter-spacing: 4px;
+    margin-top: 7%;
+    font-family: century gothic;
+    margin-left: 5%;
+}
+#o{
+    color: #ff7300;
+    font-size: 38px;
+    font-family: century gothic;
+    letter-spacing: 4px;
+
+}
+#o:hover{
+    transform: translate(1.1);
+}
+.about-sec p{
+    color: whitesmoke;
+    text-align: justify;
+    font-size: 17px;
+    font-family: century gothic;
+    letter-spacing: 1px;
+
+}
+.contact-sec a{
+    color: whitesmoke;
+    text-align: justify;
+    font-size: 17px;
+    font-family: century gothic;
+    letter-spacing: 1px;
+
+}
+.about-sec h3{
+    margin-top: 4%;
+    margin-left: 5%;
+    letter-spacing: 2px;
+    font-family: century gothic;
+    color: rgba(0, 250, 250, 0.93);
+}
+#yr{
+    margin-left: 20%;
+    color: white;
+    font-size: 14px;
+    color: #ff7300;
+
+}
+#edu li{
+    font-size: 20px;    
+    color: #ff7300;
+    letter-spacing: 1px;
+    font-family: century gothic;
+
+
+}
+.skill-sec{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.712),rgba(0, 0, 0, 0.811)), url('v617batch2-kul-05-technology.jpg');
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#skil{
+    margin-top: 6.5%;
+    margin-left: 5%;
+    letter-spacing: 2px;
+    font-family: century gothic;
+    color: white;
+    font-family: century gothic;
+}
+#skil2{
+    color: #ff7300;
+    font-family: century gothic;
+    font-size: 36px;
+}
+.progress{
+    height: 2.9%;
+    width: 96%;
+    background-color:rgba(135, 207, 235, 0.66);
+    border-radius: 15px;
+}
+.progress-bar{
+    background-color: rgba(255, 62, 62, 0.888);
+}
+.heading{
+    color:greenyellow;
+    letter-spacing: 2PX;
+    font-family: century gothic;
+}
+#bar2{
+    margin-top: 14.8%;
+    height: 1%;
+
+}
+.prj-sec{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.712),rgba(0, 0, 0, 0.811)), url('2202758.jpg');
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+.prj-sec h1{
+    margin-top: 6%;
+    margin-left: 5%;
+    letter-spacing: 2px;
+    font-family: century gothic;
+    font-family: century gothic;
+    color: white;
+
+}
+#prj2{
+    color: #ff7300;
+    font-family: century gothic;
+    font-size: 40px;
+}
+
+.card{
+    height: 480px;
+    color: white;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 15px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    border: 1px solid rgba(255, 255, 255, 0.516);
+    backdrop-filter: blur(5px);
+
+}
+.card p{
+    color: aqua;
+    letter-spacing: 1px;
+}
+.card h5{
+    letter-spacing: 1px;
+    font-family: century gothic;
+    color: rgba(128, 255, 0, 0.684);
+}
+.card .h-two{
+    color: blue;
+    font-family: century gothic;
+}
+.prj-sec h1{
+    color: white;
+}
+.card a{
+    background: none;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.436);
+    font-family: century gothic;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 5px 6px;
+    border-radius: 8px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    border-left: 1px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(3px);
+    transition: .5s;
+}
+.card a:hover{
+    color: #ff7300;
+}
+.contact-sec{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.712),rgba(0, 0, 0, 0.811)), url('rear-view-programmer-working-all-night-long.jpg');
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.contact-sec h1{
+    margin-top: 10%;
+    margin-left: 5%;
+    letter-spacing: 2px;
+    font-family: century gothic;
+    font-family: century gothic;
+    color: white;
+
+}
+#me{
+    color: #ff7300;
+    font-family: century gothic;
+    font-size: 36px;
+}
+
+.contact-sec h4{
+    color: whitesmoke;
+    letter-spacing: 2px;
+    font-family: century gothic;
+    margin-top: 3%;
+}
+.contact-sec p{
+    color: beige;
+    font-family: century gothic;
+    letter-spacing: 1px;
+    margin-top: 1%;
+}
+.contact-box{
+    margin-top: 26%;
+    margin-bottom: 10%;
+    height: auto;
+    width: 80%;
+    box-shadow: 0 8px 32px 0 rgba(66, 65, 65, 0.37);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+
+}
+.lastb{
+    color: white;
+    background: none;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-left: 55%;
+    border-radius: 25px;
+    font-size: 14px;
+    font-family: century gothic;
+    letter-spacing: 1px;
+    transition: .6s;
+    padding: 6px 35px;
+    border-radius: 8px;
+    box-shadow:inset 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(3px);
+}
+.lastb:hover{
+    background-color: #ffffffd0;
+    box-shadow:inset 0 8px 32px 0 aqua;
+    color: #000000;
+    border: 1px solid aqua;
+
+}
+.form-group{
+    background: none;
+    width: 60%;
+    height: 40px;
+    margin-top: 5%;
+    margin-left: 20%
+    
+    
+
+}
+.form-group2{
+    width: 60%;
+    margin-top: 5%;
+    
+}
+.contact-box .form-control{
+    height: 30px;
+    background: none;
+    color: yellow;
+}
+.contact-box textarea.form-control{
+    height: 120px;
+    background: none;
+    color: yellow;
+    margin-top: 5%;
+    margin-left: 33%;
+}
+.address-box p{
+    font-size: 21px;
+    letter-spacing: 2px;
+}
+#ico1{
+    color: rgb(0, 204, 255);
+    font-size: 21px;
+}
+#ico2{
+    color: rgb(0, 221, 0);
+    font-size: 21px;
+
+}#ico3{
+    color: red;
+    font-size: 21px;
+
+}
