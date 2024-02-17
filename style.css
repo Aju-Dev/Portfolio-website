@@ -179,7 +179,6 @@ span{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-
 }
 .about-sec h1{
     font-size: 38px;
@@ -228,12 +227,23 @@ span{
 
 
 }
+.skill-sec .animate{
+    transform: translateX(100%);
+    opacity: 0;
+    transition-delay: calc(.1s * var(--i));
+}
+.skill-sec.show-animate .animate{
+    transform: translateX(0);
+    opacity: 1;
+}
+
 .skill-sec{
     background-image:linear-gradient(rgba(0, 0, 0, 0.712),rgba(0, 0, 0, 0.811)), url('v617batch2-kul-05-technology.jpg');
     height: auto;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    overflow: hidden;
 }
 .skill-sec h1{
     font-size: 38px;
@@ -269,6 +279,21 @@ span{
     margin-top: 14.8%;
     height: 1%;
 
+}
+section .animate{
+    filter: blur(5px);
+    transition: 1s;
+}
+section.show-animate .animate{
+    filter: blur(0);
+}
+
+.prj-sec .animate{
+    transform: translateX(-100%);
+    transition-delay: calc(.2s * var(--i));
+}
+.prj-sec.show-animate .animate{
+    transform: translateX(0);
 }
 .prj-sec{
     background-image:linear-gradient(rgba(0, 0, 0, 0.712),rgba(0, 0, 0, 0.811)), url('2202758.jpg');
@@ -315,7 +340,6 @@ span{
     color: rgba(128, 255, 0, 0.684);
 }
 .card .h-two{
-    color: blue;
     font-family: century gothic;
 }
 .prj-sec h1{
