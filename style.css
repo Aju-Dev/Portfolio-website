@@ -296,7 +296,7 @@ section.show-animate .animate{
     transform: translateX(0);
 }
 .prj-sec{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.712),rgba(0, 0, 0, 0.811)), url('2202758.jpg');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.844),rgba(0, 0, 0, 0.811)), url('2202758.jpg');
     height: auto;
     background-size: cover;
     background-position: center;
