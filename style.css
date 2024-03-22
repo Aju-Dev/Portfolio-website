@@ -33,8 +33,13 @@ body{
     font-family: cursive;
     font-weight: bold;
 }
-#act{
+.nav-link{
+    font-size: 16px;
+    font-family: century gothic;
+    transition: .6s;
+    letter-spacing: 1.1px;
     color: white!important;
+    margin-left: 35PX 
 }
 #act:hover{
     color: #ff7300!important;
@@ -54,36 +59,87 @@ body{
     transition: .2s;
 }
 #act:hover::before{
-    width: 65px;
+    width: 70px;
 }
-
-.nav-link{
-    font-size: 16px;
-    font-family: century gothic;
-    transition: .6s;
-    letter-spacing: 1.1px;
-    color: white!important;
-    margin-left: 35PX 
+#about:hover{
+    color: #ff7300!important;
 }
-.nav-link:hover{
-    color: #ff7200!important;
-}
-.nav-link{
+#about{
     position: relative;
     display: flex;
     justify-content: center;
 }
-.nav-link::before{
+#about::before{
     content: "";
     position: absolute;
     width: 0px;
     height:2.5px;
     bottom: 5px;
-    background-color: #fff;
+    background-color:white;
     transition: .2s;
 }
-.nav-link:hover::before{
-    width: 65px;
+#about:hover::before{
+    width: 75px;
+}
+#skills:hover{
+    color: #ff7300!important;
+}
+#skills{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+#skills::before{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height:2.5px;
+    bottom: 5px;
+    background-color:white;
+    transition: .2s;
+}
+#skills:hover::before{
+    width: 63px;
+}
+#project:hover{
+    color: #ff7300!important;
+}
+#project{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+#project::before{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height:2.5px;
+    bottom: 5px;
+    background-color:white;
+    transition: .2s;
+}
+#project:hover::before{
+    width: 85px;
+}
+#contact:hover{
+    color: #ff7300!important;
+}
+#contact{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height:2.5px;
+    bottom: 5px;
+    background-color:white;
+    transition: .2s;
+}
+#contact:hover::before{
+    width: 93px;
 }
 .home-sec h3{
     color: white;
@@ -97,7 +153,7 @@ span{
     letter-spacing: 2px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.home-sec #name{
+.home-sec .name{
     color: #ff7300;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 38px;
@@ -160,7 +216,7 @@ span{
     box-shadow: inset 180px 0 0 rgba(255, 255, 255, 0.875);
 
 }
-.home-sec img{
+.home-sec .prof{
     margin-top: 15%;
     border-radius: 50%;
     width: 350px;
@@ -172,8 +228,23 @@ span{
         transform: translateY(12px);
     }
 }
+.icon-sec{
+    margin-top: 12%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.712),rgba(0, 0, 0, 0.811)), url('5570.jpg');
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+.icon-sec #images{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 7%;
+    width: 70px;
+    height:50px;
+}
 .about-sec{
-    margin-top: 10%;
     background-image:linear-gradient(rgba(0, 0, 0, 0.712),rgba(0, 0, 0, 0.811)), url('html-system-website-concept.jpg');
     height: auto;
     background-size: cover;
@@ -321,6 +392,7 @@ section.show-animate .animate{
 }
 
 .card{
+    margin-left: 15%;
     height: 480px;
     color: white;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -341,9 +413,6 @@ section.show-animate .animate{
 }
 .card .h-two{
     font-family: century gothic;
-}
-.prj-sec h1{
-    color: white;
 }
 .card a{
     background: none;
@@ -375,7 +444,7 @@ section.show-animate .animate{
     font-size: 38px;
     margin-top: 10%;
     margin-left: 5%;
-    letter-spacing: 2px;
+    letter-spacing: 8px;
     font-family: century gothic;
     font-family: century gothic;
     color: white;
@@ -386,6 +455,7 @@ section.show-animate .animate{
     color: #ff7300;
     font-family: century gothic;
     font-size: 36px;
+    letter-spacing: 8px;
 }
 
 .contact-sec h4{
